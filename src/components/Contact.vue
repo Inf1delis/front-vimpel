@@ -127,7 +127,7 @@
               .catch(error => {
                 console.log(error.response)
               });
-          return true;
+          return ;
         }
 
         this.errors = [];
