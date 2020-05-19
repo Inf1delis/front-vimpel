@@ -58,7 +58,7 @@
     }
 
     .block {
-      margin-top: 3vh !important;
+      margin-top: 5vh !important;
     }
   }
 
