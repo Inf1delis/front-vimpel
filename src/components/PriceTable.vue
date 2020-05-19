@@ -2,13 +2,13 @@
   <div id="goods">
     <div class="container-fluid">
       <div class="row block">
-        <Header title="Товарный бетон"
+        <Header :title="this.tableTitle"
                 small-text="Цены на нашем сайте всегда актульны и реальны."
                 :small-text-bool="true"/>
       </div>
 
       <div class="price-table">
-        <table class="table table-striped table-hover">
+        <table class="table table-hover">
           <thead>
           <tr>
 <!--            <th scope="col">#</th>-->
@@ -23,9 +23,9 @@
           <tr v-for="item in rows"
               :key="item.id">
 <!--            <th scope="row">{{index+1}}</th>-->
-            <td>{{item.name}}</td>
+            <th>{{item.name}}</th>
             <td>{{item.classification}}</td>
-            <th class="price" v-for="price in item.prices.slice(0, 2)" :key="price.id">{{price}}</th>
+            <td class="price" v-for="price in item.prices.slice(0, 2)" :key="price.id">{{price}}</td>
             <th class="table-button">
               <a class="btn btn-primary" role="button" @click="openModal(item)">
                 Подробнее
@@ -51,17 +51,17 @@
 
 
       <div class="row">
-        <div class="btn btn-deep-orange help-button"
-             v-on:click="() => {this.$router.push({ path: '/help', hash: '#top'})}"
-        >
-          <div class="button-text">
-            Калькулятор
-          </div>
+<!--        <div class="btn btn-deep-orange help-button"-->
+<!--             v-on:click="() => {this.$router.push({ path: '/help', hash: '#top'})}"-->
+<!--        >-->
+<!--          <div class="button-text">-->
+<!--            Калькулятор-->
+<!--          </div>-->
 
-          <div class="button-icon">
-            <i class="fas fa-external-link-alt icon-style"></i>
-          </div>
-        </div>
+<!--          <div class="button-icon">-->
+<!--            <i class="fas fa-external-link-alt icon-style"></i>-->
+<!--          </div>-->
+<!--        </div>-->
 
         <div class="btn btn-deep-orange help-button"
              v-on:click="() => {this.$router.push({ path: '/concrete_styling', hash: '#style_guide'})}"
@@ -206,7 +206,7 @@
     margin-bottom: 0;
     place-items: center;
     display: inline-grid;
-    background-color:#4D0017;
+    background-color:#032647;
     font-size: 1.3em;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -216,7 +216,7 @@
     margin-bottom: 0;
     place-items: center;
     display: inline-grid;
-    background-color:#4D0017;
+    background-color:#032647;
     font-size: 1.4em;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;

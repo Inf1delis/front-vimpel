@@ -14,7 +14,7 @@
         Миксеры: 2.5м³, 5м³, 7м³
       </p>
     </div>
-    <div class="nav-mobile col align-self-center"></div>
+    <div class="nav-mobile col align-self-center service-mobile-margin"></div>
     <div class="col-md-5 col-12 service">
       <img src="https://img.icons8.com/ios/50/000000/fire-truck.png" alt="Швинг/Бетононасос">
       <br>
@@ -47,7 +47,7 @@
     padding: 2em !important;
     transition: all .4s;
     margin-bottom: 2em;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     background-color: rgba(0,0,0,.05);
     margin: auto;
   }
@@ -59,5 +59,16 @@
 
   .service:hover {
     box-shadow: 2px 2px 20px 2px rgb(212, 212, 212);
+  }
+
+  .service-mobile-margin {
+
+  }
+
+  @media (max-width: 768px) {
+    .service-mobile-margin {
+      margin: 4px;
+    }
+
   }
 </style>

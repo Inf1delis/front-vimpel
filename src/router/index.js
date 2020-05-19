@@ -38,6 +38,16 @@ export default new Router({
       component: () => import('@/components/pages/Beton'),
     },
     {
+      path: '/peskobeton',
+      name: 'Peskobeton',
+      component: () => import('@/components/pages/Peskobeton'),
+    },
+    {
+      path: '/border',
+      name: 'Border',
+      component: () => import('@/components/pages/Border'),
+    },
+    {
       path: '/help',
       name: 'Help',
       component: () => import('@/components/pages/Help')

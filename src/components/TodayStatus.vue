@@ -4,21 +4,21 @@
       <div class="status-column">
         <h3 style="color: #1b1b1b">Отгрузили</h3>
         <h2 style="color: #1b1b1b">
-          <span style="color: green">{{this.status_data.volume}}</span> м³
+          <span style="color: #085b08">{{this.status_data.volume}}</span> м³
         </h2>
       </div>
 
       <div class="status-column">
         <h3 style="color: #1b1b1b">Загрузили миксеров</h3>
         <h2 style="color: #1b1b1b">
-          <span style="color: green">{{this.status_data.mixer_cnt}}</span>
+          <span style="color: #085b08">{{this.status_data.mixer_cnt}}</span>
         </h2>
       </div>
 
       <div class="status-column" style="border: 0;">
         <h3 style="color: #1b1b1b">Средняя загрузка</h3>
         <h2 style="color: #1b1b1b">
-          <span style="color: green">{{ Number((this.status_data.mean).toFixed(1))}}</span> м³
+          <span style="color: #085b08">{{ Number((this.status_data.mean).toFixed(1))}}</span> м³
         </h2>
       </div>
     </div>

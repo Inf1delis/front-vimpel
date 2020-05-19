@@ -54,7 +54,11 @@
   @media (max-width: 1024px) {
     .status-weather-block {
       display: block;
-      margin-bottom: 4vh;
+      margin-bottom: 2vh;
+    }
+
+    .block {
+      margin-top: 3vh !important;
     }
   }
 

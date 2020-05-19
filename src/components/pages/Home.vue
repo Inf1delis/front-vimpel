@@ -21,13 +21,6 @@
   import AboutCompany from "../AboutCompany";
   import WhyWe from "../Advantages";
   import StatusWeather from "../StatusWeather";
-  // const Presentation = () => import('../Presentation.vue')
-  // const Goods = () => import('../Goods.vue')
-  // const Pulse = () => import('../Pulse.vue')
-  // const AboutCompany = () => import('../AboutCompany.vue')
-  // const WhyWe = () => import('../Advantages.vue')
-  // const StatusWeather = () => import('../StatusWeather.vue')
-
 
   import { goods, advantages, shortList } from '@/variables.js'
 

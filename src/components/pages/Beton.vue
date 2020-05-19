@@ -32,7 +32,7 @@
   // const Service = () => import('../Service.vue')
   // const StatusWeather = () => import('../StatusWeather.vue')
 
-  import { goods, advantages, shortList, betonTable } from '@/variables.js'
+  import { goods, advantages, betonShortList, betonTable } from '@/variables.js'
 
 export default {
   name: 'Beton',
@@ -47,7 +47,7 @@ export default {
   },
   data () {
     return {
-      shortlist: shortList,
+      shortlist: betonShortList,
       title: "Бетон в Иркутской области",
       presentImg: 'Presentation1.jpeg',
       advantages: advantages,

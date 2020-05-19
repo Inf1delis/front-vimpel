@@ -28,9 +28,9 @@
   @media (max-width: 767px) {
     .pulse {
       display: block;
-      background: rgb(3, 38, 71);
+      background: #032647;
       border-radius: 70%;
-      border: 1px solid rgb(3, 38, 71);
+      border: 1px solid #032647;
       z-index: 997;
       width: 50px;
       height: 50px;
@@ -52,9 +52,9 @@
   @media (max-width: 636px) {
     .pulse {
       display: block;
-      background: rgb(3, 38, 71);
+      background: #032647;
       border-radius: 70%;
-      border: 1px solid rgb(3, 38, 71);
+      border: 1px solid #032647;
       z-index: 997;
       width: 50px;
       height: 50px;
@@ -76,9 +76,9 @@
   @media (max-width: 519px) {
     .pulse {
       display: block;
-      background: rgb(3, 38, 71);
+      background: #032647;
       border-radius: 71%;
-      border: 1px solid rgb(3, 38, 71);
+      border: 1px solid #032647;
       z-index: 997;
       width: 50px;
       height: 50px;
@@ -100,9 +100,9 @@
   @media (max-width: 400px) {
     .pulse {
       display: block;
-      background: rgb(3, 38, 71);
+      background: #032647;
       border-radius: 70%;
-      border: 1px solid rgb(3, 38, 71);
+      border: 1px solid #032647;
       z-index: 997;
       width: 50px;
       height: 50px;
@@ -123,9 +123,9 @@
   @media (max-width: 360px) {
     .pulse {
       display: block;
-      background: rgb(3, 38, 71);
+      background: #032647;
       border-radius: 70%;
-      border: 1px solid rgb(3, 38, 71);
+      border: 1px solid #032647;
       z-index: 997;
       width: 50px;
       height: 50px;
