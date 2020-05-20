@@ -13,7 +13,7 @@
               :small-text-bool="true"
               small-text="Для заливки бетона следует обратить внимание на погоду"/>
       <div class="col-md-5 col-12 today-status-card" style="margin-top: auto; margin-bottom: auto; height: 72%;">
-        <Weather />
+        <WeatherWeek />
       </div>
     </div>
   </div>
@@ -25,12 +25,12 @@
   // import Weather from "./Weather";
   const Header = () => import('./Header.vue')
   const TodayStatus = () => import('./Status.vue')
-  const Weather = () => import('./WeatherWeek.vue')
+  const WeatherWeek = () => import('./WeatherWeek.vue')
 
   export default {
     name: "StatusWeather",
     components: {
-      Weather,
+      WeatherWeek,
       TodayStatus,
       Header
     }

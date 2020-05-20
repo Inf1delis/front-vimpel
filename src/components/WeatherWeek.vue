@@ -19,13 +19,13 @@
 
 <script>
   import axios from "axios";
-  import {host} from "../variables";
+  import {host} from "../variables.js";
 
   export default {
-    name: "Weather",
+    name: "WeatherWeek",
     data() {
       return {
-        weather: 7
+        weather: []
       }
     },
     methods: {
