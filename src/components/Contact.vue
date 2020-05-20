@@ -152,11 +152,6 @@
 </script >
 
 <style lang="scss">
-  .form-header {
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
 
   .alert {
     text-align: center;
@@ -193,6 +188,12 @@
   @media (max-width: 576px) {
     .card-title {
       font-size: 10vw;
+    }
+
+    .form-header {
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 
