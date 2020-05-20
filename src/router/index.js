@@ -25,45 +25,46 @@ Vue.use(VueScrollTo, {
 Vue.use(VuePageTransition)
 Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: () => import('@/components/pages/Home'),
-    },
-    {
-      path: '/beton',
-      name: 'Beton',
-      component: () => import('@/components/pages/Beton'),
-    },
-    {
-      path: '/peskobeton',
-      name: 'Peskobeton',
-      component: () => import('@/components/pages/Peskobeton'),
-    },
-    {
-      path: '/border',
-      name: 'Border',
-      component: () => import('@/components/pages/Border'),
-    },
-    {
-      path: '/help',
-      name: 'Help',
-      component: () => import('@/components/pages/Help')
-    },
-    {
-      path: '/concrete_styling',
-      name: 'ConcreteStyling',
-      component: () => import('@/components/pages/ConcreteStyling')
-    },
-    {
-      path: '/history_beton',
-      name: 'HistoryBeton',
-      component: () => import('@/components/pages/HistoryBeton')
-    }
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: () => import('@/components/pages/Home'),
+  },
+  {
+    path: '/beton',
+    name: 'Beton',
+    component: () => import('@/components/pages/Beton'),
+  },
+  {
+    path: '/peskobeton',
+    name: 'Peskobeton',
+    component: () => import('@/components/pages/Peskobeton'),
+  },
+  {
+    path: '/border',
+    name: 'Border',
+    component: () => import('@/components/pages/Border'),
+  },
+  {
+    path: '/help',
+    name: 'Help',
+    component: () => import('@/components/pages/Help')
+  },
+  {
+    path: '/concrete_styling',
+    name: 'ConcreteStyling',
+    component: () => import('@/components/pages/ConcreteStyling')
+  },
+  {
+    path: '/history_beton',
+    name: 'HistoryBeton',
+    component: () => import('@/components/pages/HistoryBeton')
+  }
+]
 
-  ],
+export default new Router({
+  routes: routes,
   /* eslint-disable no-unused-vars */
   async scrollBehavior (to, from, savedPosition) {
     return new Promise(resolve => {
