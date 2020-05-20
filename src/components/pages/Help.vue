@@ -26,7 +26,7 @@
   // const WhyWe = () => import('../Advantages.vue')
 
   import { advantages, helpShortList } from '@/variables.js'
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
 
   export default {
     name: 'Help',

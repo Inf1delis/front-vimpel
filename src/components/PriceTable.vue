@@ -126,7 +126,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .table th {
     padding: .4rem;
     vertical-align: middle;
@@ -323,8 +323,17 @@
     }
 
     .table th {
-      padding: .15rem;
+      padding: 0rem;
+      vertical-align: middle;
     }
+
+    td {
+      align-items: center;
+      text-align: center;
+      vertical-align: middle !important;
+      padding: 0 !important;
+    }
+
 
     p {
       line-height: 19px;

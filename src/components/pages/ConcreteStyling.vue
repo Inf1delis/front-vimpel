@@ -26,10 +26,10 @@
   // const Goods = () => import('../Goods.vue')
   // const Pulse = () => import('../Pulse.vue')
   // const WhyWe = () => import('../Advantages.vue')
-  // const Guide = () => import('../StatusWeather.vue')
+  // const Guide = () => import('../Today.vue')
 
   import { goods, advantages, shortList, styleGuide } from '@/variables.js'
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
 
   export default {
     name: 'ConcreteStyling',

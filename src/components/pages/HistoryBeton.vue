@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
   import WhyWe from "../Advantages";
   import Pulse from "../Pulse";
   import Presentation from "../Presentation";

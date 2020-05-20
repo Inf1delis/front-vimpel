@@ -31,8 +31,8 @@ export default {
   components: {
     // eslint-disable-next-line vue/no-unused-components
       NavBar,
-    Strip,
-    Contact
+      Strip,
+      Contact
   },
   methods: {
     afterEnter () {
@@ -257,7 +257,7 @@ button:hover {
     font-size: 12vw;
   }
   h3 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   h5 {
     font-size: 2.7vw;
@@ -309,6 +309,10 @@ button:hover {
 @media (max-width: 360px) {
   ul a {
     font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   p {

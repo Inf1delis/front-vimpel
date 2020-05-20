@@ -4,15 +4,15 @@
       <Header title="За сегодня мы:"
               :small-text-bool="true"
               small-text="Данные обновляются каждый час"/>
-      <div class="col-md-5 col-12 today-status-card" style="padding-top: 1em !important;">
+      <div class="col-md-5 col-12 today-status-card">
         <TodayStatus />
       </div>
     </div>
     <div class="row block today-status">
       <Header title="Погодные условия:"
-              :small-text-bool="false"
-              small-text="Данные обновляются каждые 30 минут"/>
-      <div class="col-md-5 col-12 today-status-card" style="padding-top: 1em !important;">
+              :small-text-bool="true"
+              small-text="Для заливки бетона следует обратить внимание на погоду"/>
+      <div class="col-md-5 col-12 today-status-card" style="margin-top: auto; margin-bottom: auto; height: 72%;">
         <Weather />
       </div>
     </div>
@@ -24,8 +24,8 @@
   // import TodayStatus from "./TodayStatus";
   // import Weather from "./Weather";
   const Header = () => import('./Header.vue')
-  const TodayStatus = () => import('./TodayStatus.vue')
-  const Weather = () => import('./Weather.vue')
+  const TodayStatus = () => import('./Status.vue')
+  const Weather = () => import('./WeatherWeek.vue')
 
   export default {
     name: "StatusWeather",
@@ -49,6 +49,7 @@
     max-width: 95% !important;
     flex: unset;
     margin-bottom: 2em;
+    padding-top: 1em !important;
   }
 
   @media (max-width: 1024px) {
@@ -59,6 +60,13 @@
 
     .block {
       margin-top: 5vh !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .today-status-card {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
     }
   }
 

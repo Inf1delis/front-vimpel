@@ -21,7 +21,7 @@
               </div>
 
               <div class="md-form"
-                   style='display:grid; grid-template-columns: 10% 90%; text-align:center'
+                   style='display:grid; grid-template-columns: 12% 88%; text-align:center; align-items: center;'
                    >
                 <i class="fas fa-user prefix "></i>
                 <input type="text"
@@ -41,7 +41,7 @@
               </div>
 
               <div class="md-form"
-                   style='display:grid; grid-template-columns: 10% 90%; text-align:center;'>
+                   style='display:grid; grid-template-columns: 12% 88%; text-align:center; align-items: center;'>
                 <i class="fas fa-phone prefix"></i>
                 <input type="text"
                        class="form-control"
@@ -60,7 +60,7 @@
               </div>
 
               <div class="md-form"
-                   style='display:grid; grid-template-columns: 10% 90%; text-align:center'>
+                   style='display:grid; grid-template-columns: 12% 88%; text-align:center; '>
                 <i class="fas fa-pencil-alt prefix"></i>
                 <textarea class="form-control md-textarea"
                           placeholder="Напишите ваш заказ здесь (необязательно)"
@@ -149,9 +149,15 @@
       }, 3000);
     }
   }
-</script>
+</script >
 
-<style>
+<style lang="scss">
+  .form-header {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
   .alert {
     text-align: center;
     color: #2b2b2b;

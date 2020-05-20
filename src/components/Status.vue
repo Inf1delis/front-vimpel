@@ -3,22 +3,22 @@
     <div class="status-card">
       <div class="status-column">
         <h3 style="color: #1b1b1b">Отгрузили</h3>
-        <h2 style="color: #1b1b1b">
-          <span style="color: #085b08">{{this.status_data.volume}}</span> м³
+        <h2 >
+          {{this.status_data.volume}} <span style="color: #1b1b1b">м³</span>
         </h2>
       </div>
 
       <div class="status-column">
         <h3 style="color: #1b1b1b">Загрузили миксеров</h3>
-        <h2 style="color: #1b1b1b">
-          <span style="color: #085b08">{{this.status_data.mixer_cnt}}</span>
+        <h2 >
+          {{this.status_data.mixer_cnt}}
         </h2>
       </div>
 
       <div class="status-column" style="border: 0;">
         <h3 style="color: #1b1b1b">Средняя загрузка</h3>
-        <h2 style="color: #1b1b1b">
-          <span style="color: #085b08">{{ Number((this.status_data.mean).toFixed(1))}}</span> м³
+        <h2>
+          {{ Number((this.status_data.mean).toFixed(1))}} <span style="color: #1b1b1b">м³</span>
         </h2>
       </div>
     </div>
@@ -62,7 +62,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
 
   .btn-outline-secondary {
@@ -74,6 +74,7 @@
   .status-card {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-gap: 0.4em;
   }
 
   .status-column {
@@ -104,18 +105,28 @@
       grid-gap: 0.2em;
       text-align: left;
       border: 0;
-    }
 
-    .status-column h2 {
-      text-align: center;
-      margin-top: auto;
-      margin-bottom: auto !important;
+      h2 {
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto !important;
+        color: #085b08;
+      }
+
+      h3 {
+        margin: 0;
+        text-align: left;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto !important;
+      }
+
+      @media (max-width: 576px) {
+        h2 {
+          font-size: 1.8rem;
+        }
+      }
     }
   }
 
-  @media (max-width: 576px) {
-    .status-column h2 {
-      font-size: 1.8rem;
-    }
-  }
 </style>

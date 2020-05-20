@@ -12,7 +12,7 @@
              v-for="item in this.goods"
              v-bind:key="item.id"
              :style="
-                'background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(' +
+                'background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(' +
                           require('@/assets/img/products/' + item.img) + '); ' +
                 'background-size: cover; ' +
                 'color: white !important; '
@@ -65,6 +65,10 @@
   @media (max-width: 1024px) {
     .products {
       display: block;
+    }
+
+    .col-md-4 {
+      max-width: 100%;
     }
   }
 

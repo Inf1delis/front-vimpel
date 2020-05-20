@@ -23,7 +23,7 @@
   import CardGoods from "../CardGoods";
   import Service from "../Service";
   import Goods from "../Goods";
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
 
   import { goods, advantages, borderShortList, borderList } from '@/variables.js'
 

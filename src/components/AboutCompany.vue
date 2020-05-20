@@ -72,7 +72,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .about-block {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -99,6 +99,10 @@
       padding: 0vh;
       margin: 0;
       /*text-indent: 3%;*/
+    }
+
+    .card-body {
+      padding: 10px;
     }
   }
 

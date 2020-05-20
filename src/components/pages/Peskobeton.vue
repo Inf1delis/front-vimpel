@@ -23,7 +23,7 @@
   import PriceTable from "../PriceTable";
   import Service from "../Service";
   import Goods from "../Goods";
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
 
   import { goods, advantages, peskoShortList, peskoTable } from '@/variables.js'
 

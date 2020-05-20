@@ -20,7 +20,7 @@
   import Pulse from "../Pulse";
   import AboutCompany from "../AboutCompany";
   import WhyWe from "../Advantages";
-  import StatusWeather from "../StatusWeather";
+  import StatusWeather from "../Today";
 
   import { goods, advantages, shortList } from '@/variables.js'
 
