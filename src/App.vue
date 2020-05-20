@@ -55,11 +55,15 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Raleway');
-  @import url('https://fonts.googleapis.com/css?family=Nunito:300i');
-  @import url('https://fonts.googleapis.com/css?family=Quicksand');
-  @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
-  @import url('https://fonts.googleapis.com/css?family=Rubik');
+  @import url('https://fonts.googleapis.com/css?family=Raleway&font-display=fallback');
+  @import url('https://fonts.googleapis.com/css?family=Nunito:300i&font-display=fallback');
+  @import url('https://fonts.googleapis.com/css?family=Quicksand&font-display=fallback');
+  @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&font-display=fallback');
+  @import url('https://fonts.googleapis.com/css?family=Rubik&font-display=fallback');
+
+  @font-face {
+    font-display: fallback; /* Задаем поведение браузера на время загрузки */
+  }
 
   .fade-enter-active,
   .fade-leave-active {
