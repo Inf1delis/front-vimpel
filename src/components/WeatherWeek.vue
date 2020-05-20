@@ -71,7 +71,7 @@
 
     @media (max-width: 576px) {
       grid-template-columns: 100%;
-      grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+      /*grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;*/
 
       .weather-mobile {
         display: grid !important;
