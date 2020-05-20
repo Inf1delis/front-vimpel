@@ -57,9 +57,7 @@ function getRoutesXML() {
   const list = getRoutesList(routes, 'https://vimpel38.ru/#')
       .map(route => `<url><loc>${route}</loc></url>`)
       .join('\r\n');
-  return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    ${list}
-  </urlset>`;
+  return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">${list}</urlset>`;
 }
 
 console.log(getRoutesXML());
