@@ -7,7 +7,9 @@
     />
     <Pulse/>
     <PriceTable :table-title="this.tableTitle"
-                :rows="this.rows"/>
+                :rows="this.rows"
+                :columns="this.columns"
+                :slice_number="1"/>
 
     <StatusWeather />
     <Service id="services"/>
@@ -45,6 +47,7 @@
         presentImg: 'pesko-greet.jpg',
         advantages: advantages,
         rows: peskoTable.rows,
+        columns: peskoTable.columns,
         tableTitle: peskoTable.tableTitle,
         goods: goods.sort(() => .5 - Math.random()).slice(0,2)
       };

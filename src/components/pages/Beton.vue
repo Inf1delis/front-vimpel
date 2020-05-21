@@ -7,7 +7,8 @@
     />
     <Pulse/>
     <PriceTable :table-title="this.tableTitle"
-                :rows="this.rows"/>
+                :rows="this.rows"
+                :columns="this.columns"/>
 
     <StatusWeather />
     <Service id="services"/>
@@ -52,6 +53,7 @@ export default {
       presentImg: 'Presentation1.jpeg',
       advantages: advantages,
       rows: betonTable.rows,
+      columns: betonTable.columns,
       tableTitle: betonTable.tableTitle,
       goods: goods.sort(() => .5 - Math.random()).slice(0,2)
     };

@@ -7,6 +7,9 @@
       <p>Днем</p>
       <p>Ночью</p>
     </div>
+<!--    <div>-->
+<!--      Погода в данный момент недоступна :(-->
+<!--    </div>-->
     <div class="weather-card-day" v-for="item in this.weather" :key="item.id">
       <p>{{item.weekday}}</p>
       <small>{{item.date}}</small>

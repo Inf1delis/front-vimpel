@@ -14,8 +14,8 @@
 <!--            <th scope="col">#</th>-->
             <th scope="col">Марка</th>
             <th scope="col">Класс</th>
-            <th scope="col">П2</th>
-            <th scope="col">П3</th>
+            <th scope="col" v-for="col in columns" :key="col.id">{{col}}</th>
+<!--            <th scope="col">П3</th>-->
             <th scope="col"> </th>
           </tr>
           </thead>
@@ -25,7 +25,7 @@
 <!--            <th scope="row">{{index+1}}</th>-->
             <th>{{item.name}}</th>
             <td>{{item.classification}}</td>
-            <td class="price" v-for="price in item.prices.slice(0, 2)" :key="price.id">{{price}}</td>
+            <td class="price" v-for="price in item.prices.slice(0, slice_number)" :key="price.id">{{price}}</td>
             <th class="table-button">
               <a class="btn btn-primary" role="button" @click="openModal(item)">
                 Подробнее
@@ -94,7 +94,17 @@
       rows: {
         type: Array,
         required: true
-      }
+      },
+      columns: {
+        type: Array,
+        required: true
+      },
+      slice_number: {
+        type: Number,
+        default: 2,
+        required: false
+      },
+
     },
     data() {
       return {
@@ -104,7 +114,7 @@
           classification: '',
           price: '',
           text1: '',
-          text2: ''
+          text2: '',
         }
       };
     },
