@@ -71,7 +71,7 @@
               </div>
 
               <div class="text-center mt-4">
-                <button @click="checkForm" style="padding: 0;" class="btn btn-light-blue">
+                <button @click.prevent="checkForm" style="padding: 0;" class="btn btn-light-blue">
                   Отправить
                 </button>
               </div>
@@ -127,7 +127,7 @@
               .catch(error => {
                 console.log(error.response)
               });
-          return ;
+          return true;
         }
 
         this.errors = [];
@@ -139,7 +139,7 @@
           this.errors.push('Требуется указать возраст.');
         }
 
-
+        return false
         // e.preventDefault();
       }
     },

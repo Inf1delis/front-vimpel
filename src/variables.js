@@ -1,5 +1,7 @@
 export const host = 'https://vimpel38.ru/back'
 
+// export const host = 'http://0.0.0.0:5000'
+
 export const goods = [
   {
     img: 'beton.jpg',
