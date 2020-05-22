@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host: https://vimpel38.ru
+Sitemap: https://vimpel38.ru/sitemap.xml
