@@ -12,8 +12,8 @@
           <thead>
           <tr>
 <!--            <th scope="col">#</th>-->
-            <th scope="col">Марка</th>
-            <th scope="col">Класс</th>
+            <th scope="col">{{table_columns[0]}}</th>
+            <th scope="col">{{table_columns[1]}}</th>
             <th scope="col" v-for="col in columns" :key="col.id">{{col}}</th>
 <!--            <th scope="col">П3</th>-->
             <th scope="col"> </th>
@@ -26,7 +26,7 @@
             <th>{{item.name}}</th>
             <td>{{item.classification}}</td>
             <td class="price" v-for="price in item.prices.slice(0, slice_number)" :key="price.id">{{price}}</td>
-            <th class="table-button">
+            <th v-if="showButton" class="table-button">
               <a class="btn btn-primary" role="button" @click="openModal(item)">
                 Подробнее
               </a>
@@ -91,6 +91,11 @@
         type: String,
         required: true
       },
+      showButton: {
+        type: Boolean,
+        default: true,
+        required: false
+      },
       rows: {
         type: Array,
         required: true
@@ -104,7 +109,13 @@
         default: 2,
         required: false
       },
-
+      table_columns: {
+        default: [
+            'Марка',
+            'Класс'
+        ],
+        required: false
+      }
     },
     data() {
       return {

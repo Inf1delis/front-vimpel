@@ -37,6 +37,11 @@ const routes = [
     component: () => import('@/components/pages/Beton'),
   },
   {
+    path: '/fbs',
+    name: 'FBS',
+    component: () => import('@/components/pages/FBS'),
+  },
+  {
     path: '/peskobeton',
     name: 'Peskobeton',
     component: () => import('@/components/pages/Peskobeton'),
