@@ -8,7 +8,8 @@
     <Pulse/>
     <PriceTable :table-title="this.tableTitle"
                 :rows="this.rows"
-                :columns="this.columns"/>
+                :columns="this.columns"
+                :slice_number="1"/>
 
     <StatusWeather />
     <Service id="services"/>
@@ -25,13 +26,6 @@
   import Service from "../Service";
   import Goods from "../Goods";
   import StatusWeather from "../Today";
-  // const Presentation = () => import('../Presentation.vue')
-  // const Goods = () => import('../Goods.vue')
-  // const Pulse = () => import('../Pulse.vue')
-  // const WhyWe = () => import('../Advantages.vue')
-  // const PriceTable = () => import('../PriceTable.vue')
-  // const Service = () => import('../Service.vue')
-  // const StatusWeather = () => import('../Today.vue')
 
   import { goods, advantages, betonShortList, betonTable } from '@/variables.js'
 

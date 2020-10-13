@@ -14,7 +14,7 @@
 <!--            <th scope="col">#</th>-->
             <th scope="col">{{table_columns[0]}}</th>
             <th scope="col">{{table_columns[1]}}</th>
-            <th scope="col" v-for="col in columns" :key="col.id">{{col}}</th>
+            <th scope="col" v-for="col in columns.slice(0, slice_number)" :key="col.id">{{col}}</th>
 <!--            <th scope="col">П3</th>-->
             <th scope="col"> </th>
           </tr>
@@ -74,6 +74,10 @@
           <div class="button-icon">
             <i class="fas fa-external-link-alt icon-style"></i>
           </div>
+        </div>
+
+        <div  class="col-12 centered">
+          <h5 style="color: #1b1b1b; margin-top: 1em"> Противомозная добавка — 150 р/куб</h5>
         </div>
       </div>
     </div>
