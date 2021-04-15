@@ -76,9 +76,9 @@
           </div>
         </div>
 
-        <div  class="col-12 centered">
-          <h5 style="color: #1b1b1b; margin-top: 1em"> Противомозная добавка — 150 р/куб</h5>
-        </div>
+<!--        <div  class="col-12 centered">-->
+<!--          <h5 style="color: #1b1b1b; margin-top: 1em"> Противоморозная добавка — 150 р/куб</h5>-->
+<!--        </div>-->
       </div>
     </div>
   </div>

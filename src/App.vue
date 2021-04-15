@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar id="top"/>
+
     <transition
             name="fade"
             mode="out-in"
@@ -9,6 +10,7 @@
     >
       <router-view :key="this.$route.fullPath"></router-view>
     </transition>
+
 <!--    <router-view/>-->
     <Strip id="contactForm"/>
     <Contact />

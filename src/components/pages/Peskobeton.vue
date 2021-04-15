@@ -9,7 +9,7 @@
     <PriceTable :table-title="this.tableTitle"
                 :rows="this.rows"
                 :columns="this.columns"
-                :slice_number="1"/>
+                :slice_number="2"/>
 
     <StatusWeather />
     <Service id="services"/>
