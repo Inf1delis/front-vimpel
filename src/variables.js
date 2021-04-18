@@ -203,13 +203,13 @@ export const betonTable = {
 
 export const fbsTable = {
   tableTitle: 'Фундаментные блоки',
-  columns: ['Длина: 240 (см)' ],
-  table_columns: ['Высота Х Ширина (см Х см)','Длина: 120 (см)' ],
+  columns: ['Длина: 240 (см)', 'Длина: 120 (см)' ],
+  table_columns: ['Высота Х Ширина (см Х см)'],
   rows: [
     {
       name: '60х60',
-      classification: '1 350',
-      prices: ['2 500'],
+      // classification: '1 350',
+      prices: ['1 350', '2 500'],
       modal: {
         text1: 'Легкий бетон, который используется в основном для бетонной\n' +
             '                            подготовки.',
@@ -220,8 +220,8 @@ export const fbsTable = {
     },
     {
       name: '60х50',
-      classification: '1 200',
-      prices: ['2 200'],
+      // classification: '1 200',
+      prices: ['1 200', '2 200'],
       modal: {
         text1: 'Быстро застывает, поэтому процесс строительства будет\n' +
             '                            проходить\n' +
@@ -233,8 +233,8 @@ export const fbsTable = {
     },
     {
       name: '60х40',
-      classification: '1 000',
-      prices: ['1 900'],
+      // classification: '1 000',
+      prices: ['1 000', '1 900'],
       modal: {
         text1: 'Тяжелый бетон, чаще всего служит для заливки монолитных\n' +
             '                            фундаментов, дорожек или каркасных сооружений.',
@@ -244,8 +244,8 @@ export const fbsTable = {
     },
     {
       name: '60х30',
-      classification: '850',
-      prices: ['1 500'],
+      // classification: '850',
+      prices: ['850', '1 500'],
       modal: {
         text1: 'Качества немного лучше, чем у М200, имеет подобные уровни\n' +
             '                            водонепроницаемости, морозостойкости и подвижности.',

@@ -58,10 +58,15 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Raleway&font-display=fallback');
-  @import url('https://fonts.googleapis.com/css?family=Nunito:300i&font-display=fallback');
+
+  /*@import url('https://fonts.googleapis.com/css?family=Nunito:300i&font-display=fallback');*/
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik:wght@300&display=swap');
+
   @import url('https://fonts.googleapis.com/css?family=Quicksand&font-display=fallback');
   @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&font-display=fallback');
-  @import url('https://fonts.googleapis.com/css?family=Rubik&font-display=fallback');
+
+  /*@import url('https://fonts.googleapis.com/css?family=Rubik&font-display=fallback');*/
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@380&display=swap');
 
   @font-face {
     font-display: fallback; /* Задаем поведение браузера на время загрузки */

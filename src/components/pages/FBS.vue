@@ -12,7 +12,10 @@
                 :rows="this.rows"
                 :columns="this.columns"
                 :table_columns="this.table_columns"
-                :show-button="false"/>
+                :show-button="false"
+                calcUnits="шт"
+
+    />
 
     <StatusWeather />
     <Service id="services"/>
