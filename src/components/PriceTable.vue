@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row block">
         <Header :title="this.tableTitle"
-                small-text="Вы можете выбрать интересующий Вас товар по нажатию на цену и указав необходимое количество. Цены на нашу продукцию указаны без учета доставки."
+                :small-text="'Цены на нашу продукцию указаны без учета доставки.'"
                 :small-text-bool="true"/>
       </div>
 
@@ -13,7 +13,7 @@
           <tr>
             <th scope="col" v-for="table_col in table_columns" :key="table_col.id">{{table_col}}</th>
             <th scope="col" v-for="col in columns.slice(0, slice_number)" :key="col.id">{{col}}</th>
-            <th scope="col">{{calcUnits}}</th>
+            <th class="calc" scope="col">{{calcUnits}}</th>
           </tr>
           </thead>
           <tbody>
@@ -30,9 +30,10 @@
             >
               {{price}}
             </td>
-            <th class="table-calc">
+            <th class="table-calc calc">
               <input class="btn table-calc-input" type="number"
                      v-model="calc.rows[row_id].vol"
+                     @change="round_all_volumes"
               >
             </th>
           </tr>
@@ -114,11 +115,11 @@
         </div>
       </div>
 
-<!--      <div class="col-12 centered mobile">-->
-<!--        <h3 style="color: #1b1b1b; margin-top: 1em">Сумма заказа: {{this.number_with_sep(this.calc_total())}} руб.</h3>-->
-<!--      </div>-->
+      <div class="col-12 centered calc">
+        <h3 style="color: #1b1b1b; margin-top: 1em">Сумма заказа: {{this.number_with_sep(this.calc_total())}} руб.</h3>
+      </div>
 
-      <div class="row">
+      <div class="row calc">
 
         <div class="btn btn-deep-orange help-button"
              v-on:click="openDiscountModal()"
@@ -523,6 +524,9 @@
     background-color: #8f9ead;
   }
 
+  .calc {
+    /*display: block;*/
+  }
 
   .table-calc {
     /*width: 30%;*/
@@ -543,6 +547,9 @@
   }
 
   @media (max-width: 768px) {
+    .calc {
+      display: none;
+    }
     .modal-window-content {
       margin-top: 40%;
     }
