@@ -55,6 +55,7 @@
             <br>
             <input class="btn modal-window-center btn-input"
                    type="text"
+                   inputmode="tel"
                    placeholder="Ваш телефон*"
                    v-model="form.phone"
                    required
