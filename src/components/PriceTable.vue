@@ -381,6 +381,9 @@
         selectElement.addEventListener('change', (event) => {
           this.round_all_volumes(event)
         });
+        selectElement.addEventListener('blur', (event) => {
+          this.round_all_volumes(event)
+        });
       }
     }
   }
