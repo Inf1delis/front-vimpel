@@ -31,7 +31,7 @@
               {{price}}
             </td>
             <th class="table-calc calc">
-              <input class="btn table-calc-input"
+              <input class="btn table-calc-input btn-input"
                      type="text"
                      inputmode="numeric"
                      :id="row_id"
@@ -53,7 +53,7 @@
           <p style="font-size: 1em;">
             Для оформления заказа оставьте Ваш номер телефона, Вам перезвонит наш менеджер и уточнит детали.
             <br>
-            <input class="btn modal-window-center"
+            <input class="btn modal-window-center btn-input"
                    type="text"
                    placeholder="Ваш телефон*"
                    v-model="form.phone"
@@ -61,7 +61,7 @@
             />
             Для рассчета доставки Вы можете оставить Ваш адрес.
             <br>
-            <input class="btn modal-window-center"
+            <input class="btn modal-window-center btn-input"
                    type="text"
                    placeholder="Адрес доставки"
                    v-model="form.address"
@@ -477,6 +477,13 @@
 
   .table-button {
     padding: 0.5rem !important;
+  }
+  .btn-input {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
   }
 
   .btn-primary {
