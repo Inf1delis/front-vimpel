@@ -32,8 +32,9 @@
             </td>
             <th class="table-calc calc">
               <input class="btn table-calc-input" type="number"
-                     v-model="calc.rows[row_id].vol"
-                     @change="round_all_volumes"
+                     :id="row_id"
+                     :value="calc.rows[row_id].vol"
+                     v-on:change="round_all_volumes"
               >
             </th>
           </tr>
@@ -334,7 +335,7 @@
       },
       calc_total() {
         let total = 0
-        this.round_all_volumes()
+        // this.round_all_volumes()
         for (let i = 0; i < this.calc.rows.length; i++) {
           let price_id = this.calc.rows[i].price_id
           let price = this.float_price(this.rows[i].prices[price_id])
@@ -350,8 +351,13 @@
         }
       },
       // eslint-disable-next-line no-unused-vars
-      round_all_volumes(envt) {
-        console.log(this.calc.rows)
+      round_all_volumes(event) {
+        // console.log(event)
+        if (event.type !== 'change') {
+          return
+        }
+        let row_id = parseInt(event.target.id)
+        this.calc.rows[row_id].vol = event.target.value
         for (let i = 0; i < this.calc.rows.length; i++) {
           this.calc.rows[i].vol = this.round_volume(this.calc.rows[i].vol)
         }
@@ -548,7 +554,7 @@
 
   @media (max-width: 768px) {
     .calc {
-      display: none;
+      /*display: none;*/
     }
     .modal-window-content {
       margin-top: 40%;
