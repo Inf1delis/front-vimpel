@@ -31,8 +31,10 @@
               {{price}}
             </td>
             <th class="table-calc calc">
-              <input class="btn table-calc-input" type="number"
-                     :id="row_id" :ref="row_id"
+              <input class="btn table-calc-input"
+                     type="text"
+                     inputmode="numeric"
+                     :id="row_id"
                      :value="calc.rows[row_id].vol"
               >
             </th>
@@ -356,7 +358,7 @@
           return
         }
         let row_id = parseInt(event.target.id)
-        this.calc.rows[row_id].vol = event.target.value
+        this.calc.rows[row_id].vol = event.target.value.replace(',', '.')
         for (let i = 0; i < this.calc.rows.length; i++) {
           this.calc.rows[i].vol = this.round_volume(this.calc.rows[i].vol)
         }
