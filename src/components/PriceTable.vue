@@ -32,9 +32,8 @@
             </td>
             <th class="table-calc calc">
               <input class="btn table-calc-input" type="number"
-                     :id="row_id"
+                     :id="row_id" :ref="row_id"
                      :value="calc.rows[row_id].vol"
-                     v-on:change="round_all_volumes"
               >
             </th>
           </tr>
@@ -373,6 +372,15 @@
       //   }
       // }
     },
+    mounted() {
+      for (let i=0;i< this.calc.rows.length; i++) {
+        let el_id = "[id='" + i + "']"
+        const selectElement = document.querySelector(el_id);
+        selectElement.addEventListener('change', (event) => {
+          this.round_all_volumes(event)
+        });
+      }
+    }
   }
 </script>
 
