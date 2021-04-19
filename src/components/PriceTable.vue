@@ -354,9 +354,9 @@
       // eslint-disable-next-line no-unused-vars
       round_all_volumes(event) {
         // console.log(event)
-        if (event.type !== 'change') {
-          return
-        }
+        // if (event.type !== 'change') {
+        //   return
+        // }
         let row_id = parseInt(event.target.id)
         this.calc.rows[row_id].vol = event.target.value.replace(',', '.')
         for (let i = 0; i < this.calc.rows.length; i++) {
@@ -378,12 +378,12 @@
       for (let i=0;i< this.calc.rows.length; i++) {
         let el_id = "[id='" + i + "']"
         const selectElement = document.querySelector(el_id);
-        selectElement.addEventListener('change', (event) => {
-          this.round_all_volumes(event)
-        });
+        // selectElement.addEventListener('change', (event) => {
+        //   this.round_all_volumes(event)
+        // });
         selectElement.addEventListener('blur', (event) => {
           this.round_all_volumes(event)
-        });
+        }, true);
       }
     }
   }
