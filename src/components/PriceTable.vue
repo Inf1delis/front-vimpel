@@ -33,7 +33,6 @@
             <th class="table-calc">
               <input class="btn table-calc-input" type="number"
                      v-model="calc.rows[row_id].vol"
-                     @change="round_all_volumes"
               >
             </th>
           </tr>
@@ -46,7 +45,7 @@
         <div v-if="!calc.sended && calc.total !== 0" class="modal-window-content col-md-4 col-12 advantage centered faq-content">
           <h1 class='card-title' style="color: #2b2b2b;">Оформление заказа</h1>
           <h3 style="color: #2b2b2b;">
-            Цена на Ваш заказ {{this.number_with_sep(this.calc.total)}} руб. без учета доставки
+            Цена на Ваш заказ {{this.number_with_sep(this.calc_total())}} руб. без учета доставки
           </h3>
           <p style="font-size: 1em;">
             Для оформления заказа оставьте Ваш номер телефона, Вам перезвонит наш менеджер и уточнит детали.
@@ -115,9 +114,9 @@
         </div>
       </div>
 
-      <div class="col-12 centered">
-        <h3 style="color: #1b1b1b; margin-top: 1em">Сумма заказа: {{this.number_with_sep(this.calc_total())}} руб.</h3>
-      </div>
+<!--      <div class="col-12 centered mobile">-->
+<!--        <h3 style="color: #1b1b1b; margin-top: 1em">Сумма заказа: {{this.number_with_sep(this.calc_total())}} руб.</h3>-->
+<!--      </div>-->
 
       <div class="row">
 
@@ -233,6 +232,7 @@
     },
     methods: {
       openDiscountModal() {
+        this.calc_total()
         this.calc.sended = false
         this.calc.modalShow = true
       },
@@ -333,6 +333,7 @@
       },
       calc_total() {
         let total = 0
+        this.round_all_volumes()
         for (let i = 0; i < this.calc.rows.length; i++) {
           let price_id = this.calc.rows[i].price_id
           let price = this.float_price(this.rows[i].prices[price_id])
@@ -353,7 +354,7 @@
         for (let i = 0; i < this.calc.rows.length; i++) {
           this.calc.rows[i].vol = this.round_volume(this.calc.rows[i].vol)
         }
-        this.calc_total()
+        // this.calc_total()
       },
     },
     beforeMount() {
