@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row block">
         <Header :title="this.tableTitle"
-                :small-text="'Цены на нашу продукцию указаны без учета доставки.'"
+                :small-text="'Цены на нашу продукцию указаны без учета доставки. Выберите интесующий Вас товар и введите количество.'"
                 :small-text-bool="true"/>
       </div>
 
@@ -45,9 +45,9 @@
 
 
       <div class="modal-window" v-if="calc.modalShow">
-        <div v-if="!calc.sended && calc.total !== 0" class="modal-window-content col-md-4 col-12 advantage centered faq-content">
+        <div v-if="!calc.sended" class="modal-window-content col-md-4 col-12 advantage centered faq-content">
           <h1 class='card-title' style="color: #2b2b2b;">Оформление заказа</h1>
-          <h3 style="color: #2b2b2b;">
+          <h3 v-if="calc.total !== 0" style="color: #2b2b2b;">
             Цена на Ваш заказ {{this.number_with_sep(this.calc_total())}} руб. без учета доставки
           </h3>
           <p style="font-size: 1em;">
@@ -97,25 +97,25 @@
           </a>
         </div>
 
-        <div v-else
-             class="modal-window-content col-md-4 col-12 advantage centered faq-content"
-             @click="close()"
-        >
-          <h1 class='card-title' style="color: #2b2b2b;">Пустой заказ</h1>
-          <h3 style="color: #2b2b2b;">
-            Оформите заказ и получите индивидуальную скидку
-          </h3>
-          <p style="font-size: 1em;">
-            Это можно сделать, выбрав интересующую Вас марку бетона и указав необходимое Вам значение {{calcUnits}}.
-            <br>
-            <br>
-            Скидка дается в зависимости от объема.
-          </p>
-          <a class="button-text btn btn-deep-orange modal-window-center modal-btn"
-             @click="close()">
-            Закрыть
-          </a>
-        </div>
+<!--        <div v-else-->
+<!--             class="modal-window-content col-md-4 col-12 advantage centered faq-content"-->
+<!--             @click="close()"-->
+<!--        >-->
+<!--          <h1 class='card-title' style="color: #2b2b2b;">Пустой заказ</h1>-->
+<!--          <h3 style="color: #2b2b2b;">-->
+<!--            Оформите заказ и получите индивидуальную скидку-->
+<!--          </h3>-->
+<!--          <p style="font-size: 1em;">-->
+<!--            Это можно сделать, выбрав интересующую Вас марку бетона и указав необходимое Вам значение {{calcUnits}}.-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            Скидка дается в зависимости от объема.-->
+<!--          </p>-->
+<!--          <a class="button-text btn btn-deep-orange modal-window-center modal-btn"-->
+<!--             @click="close()">-->
+<!--            Закрыть-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
 
       <div class="col-12 centered calc">

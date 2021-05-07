@@ -13,6 +13,7 @@
                 :columns="this.columns"
                 :table_columns="this.table_columns"
                 :show-button="false"
+                :slice_number="3"
                 calcUnits="шт"
 
     />
@@ -62,7 +63,7 @@
       };
     },
     created () {
-      document.title = "Бордюры в Иркутске от производителя закажите с доставкой|Вымпел";
+      document.title = "Фундаментные блоки в Иркутске от производителя закажите с доставкой|Вымпел";
     }
   }
 </script>
