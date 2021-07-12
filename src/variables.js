@@ -150,17 +150,17 @@ export const fbsTable = {
     {
       name: '60х30',
       // classification: '850',
-      prices: ['800', '1 000', '1 800'],
+      prices: ['1 100', '1 100', '1 900'],
     },
     {
       name: '60х40',
       // classification: '1 000',
-      prices: ['850', '1 050', '2 100'],
+      prices: ['1 200', '1 200', '2 200'],
     },
     {
       name: '60х60',
       // classification: '1 350',
-      prices: ['1 300', '1 500', '3 000'],
+      prices: ['1 500', '1 600', '3 100'],
     },
   ]
 }
