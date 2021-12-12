@@ -64,42 +64,42 @@ export const betonTable = {
     {
       name: 'М50',
       classification: 'В7,5',
-      prices: ['2 650', '2 750', '2 400'],
+      prices: ['3 350', '3 450', '2 400'],
     },
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['3 300', '3 400', '2 400'],
+      prices: ['3 600', '3 700', '2 400'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['3 400', '3 500', '2 550'],
+      prices: ['3 800', '3 900', '2 550'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['3 600', '3 700', '2 750'],
+      prices: ['4 000', '4 100', '2 750'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['3 900', '4 000', '3 000'],
+      prices: ['4 200', '4 300', '3 000'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['4 200', '4 300', '3 250'],
+      prices: ['4 350', '4 450', '3 250'],
     },
     {
       name: 'М350',
       classification: 'В25',
-      prices: ['4 500', '4 600', '3 540'],
+      prices: ['4 750', '4 850', '3 540'],
     },
     {
       name: 'М400',
       classification: 'В30',
-      prices: ['4 700', '4 800', '3 750'],
+      prices: ['4 900', '5 000', '3 750'],
     }
   ]
 }
@@ -112,32 +112,32 @@ export const peskoTable = {
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['3 900', '4 000', '2 790'],
+      prices: ['4 300', '4 400', '2 790'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['4 100', '4 200', '2 990'],
+      prices: ['4 500', '4 600', '2 990'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['4 300', '4 400'],
+      prices: ['4 700', '4 800'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['4 500', '4 600'],
+      prices: ['4 900', '5 000'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['4 700', '4 800'],
+      prices: ['5 100', '5 200'],
     },
     {
       name: 'М350',
       classification: 'В30',
-      prices: ['5 000', '5 100'],
+      prices: ['5 500', '5 600'],
     }
   ]
 }
@@ -150,17 +150,17 @@ export const fbsTable = {
     {
       name: '60х30',
       // classification: '850',
-      prices: ['1 100', '1 100', '1 900'],
+      prices: ['1 600', '1 200', '2 400'],
     },
     {
       name: '60х40',
       // classification: '1 000',
-      prices: ['1 200', '1 200', '2 200'],
+      prices: ['1 700', '1 600', '3 200'],
     },
     {
       name: '60х60',
       // classification: '1 350',
-      prices: ['1 500', '1 600', '3 100'],
+      prices: ['2 000', '2 400', '4 700'],
     },
   ]
 }
