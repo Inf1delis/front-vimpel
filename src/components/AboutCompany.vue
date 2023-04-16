@@ -4,7 +4,7 @@
       <div class="row products" style="">
         <Header title="О компании"
                 :small-text-bool="this.showSmallText"
-                small-text="Производственный комплекс «Вымпел» предлагает товарный бетон от производителя
+                small-text="Производственный комплекс предлагает товарный бетон от производителя
                 с доставкой на ваш объект."/>
         <div class="about-block">
           <div class="card-body">

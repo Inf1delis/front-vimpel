@@ -46,7 +46,7 @@
       };
     },
     created () {
-      document.title = "Помощь клиентам|Вымпел";
+      document.title = "Помощь клиентам";
     }
   }
 </script>

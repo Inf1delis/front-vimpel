@@ -52,7 +52,7 @@
       };
     },
     created () {
-      document.title = "Руководство Заливки|Вымпел";
+      document.title = "Руководство Заливки";
     }
   }
 </script>

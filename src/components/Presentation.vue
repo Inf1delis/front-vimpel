@@ -10,7 +10,7 @@
     <div class="row greet" style="justify-content: center;">
       <div class="col-12">
         <h1>
-          Компания <br> Вымпел
+          Производитель <br>бетонных изделий 
         </h1>
       </div>
       <br>

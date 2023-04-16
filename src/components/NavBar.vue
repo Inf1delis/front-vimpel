@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="navbar-top">
-        <img class='logo' @click="toPage('/', '#top')" alt="Логотип компании Вымпел" style='padding-left: 0;'
+        <img class='logo' @click="toPage('/', '#top')" alt="Логотип" style='padding-left: 0;'
              src="@/assets/img/logo5.jpeg">
       <div class='' style="
             all: initial;
