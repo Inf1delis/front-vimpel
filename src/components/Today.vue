@@ -46,7 +46,7 @@
 
   .today-status-card {
     width: 100% !important;
-    max-width: 95% !important;
+    max-width: 70% !important;
     flex: unset;
     margin-bottom: 2em;
     padding-top: 1em !important;
