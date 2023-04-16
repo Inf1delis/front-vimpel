@@ -69,37 +69,37 @@ export const betonTable = {
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['3 950', '4 050', '4 150'],
+      prices: ['4 000', '4 100', '4 150'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['4 150', '4 250', '4 350'],
+      prices: ['4 200', '4 300', '4 350'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['4 450', '4 550', '4 650'],
+      prices: ['4 600', '4 700', '4 650'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['4 700', '4 800', '3 000'],
+      prices: ['4 800', '4 900', '3 000'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['5 000', '5 100', '3 250'],
+      prices: ['5 100', '5 200', '3 250'],
     },
     {
       name: 'М350',
       classification: 'В25',
-      prices: ['5 500', '5 600', '3 540'],
+      prices: ['5 600', '5 700', '3 540'],
     },
     {
       name: 'М400',
       classification: 'В30',
-      prices: ['5 800', '5 900', '3 750'],
+      prices: ['6 000', '6 100', '3 750'],
     }
   ]
 }
