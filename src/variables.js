@@ -63,7 +63,7 @@ export const betonTable = {
   rows: [
     {
       name: 'М50',
-      classification: 'В7,5',
+      classification: 'В3,5',
       prices: ['3 650', '3 750', '3 850'],
     },
     {
