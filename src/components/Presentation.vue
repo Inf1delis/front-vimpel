@@ -10,7 +10,7 @@
     <div class="row greet" style="justify-content: center;">
       <div class="col-12">
         <h1>
-          Производитель <br>бетонных изделий 
+          Компания
         </h1>
       </div>
       <br>
