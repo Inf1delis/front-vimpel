@@ -1,13 +1,13 @@
 <template>
   <div class="status-weather-block">
-    <div class="row block today-status">
-      <Header title="За сегодня мы:"
-              :small-text-bool="true"
-              small-text="Данные обновляются каждый час"/>
-      <div class="col-md-5 col-12 today-status-card">
-        <TodayStatus />
-      </div>
-    </div>
+<!--    <div class="row block today-status">-->
+<!--      <Header title="За сегодня мы:"-->
+<!--              :small-text-bool="true"-->
+<!--              small-text="Данные обновляются каждый час"/>-->
+<!--      <div class="col-md-5 col-12 today-status-card">-->
+<!--        <TodayStatus />-->
+<!--      </div>-->
+<!--    </div>-->
     <div class="row block today-status">
       <Header title="Погодные условия:"
               :small-text-bool="true"
@@ -24,14 +24,14 @@
   // import TodayStatus from "./TodayStatus";
   // import Weather from "./Weather";
   const Header = () => import('./Header.vue')
-  const TodayStatus = () => import('./Status.vue')
+//  const TodayStatus = () => import('./Status.vue')
   const WeatherWeek = () => import('./WeatherWeek.vue')
 
   export default {
     name: "StatusWeather",
     components: {
       WeatherWeek,
-      TodayStatus,
+//      TodayStatus,
       Header
     }
   }
@@ -40,7 +40,7 @@
 <style>
   .status-weather-block {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
 
   }
 
