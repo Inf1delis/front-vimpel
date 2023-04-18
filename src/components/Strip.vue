@@ -20,7 +20,7 @@
            style="font-family: 'Rubik', sans-serif; font-size: 1em;">
           +7 (3952) 748-795
           <!--                +7 (3952) 748 - 795-->
-          <br><span style='text-align:center'>vimpel38@ya.ru</span>
+          <br><span style='text-align:center'>vmp-38@ya.ru</span>
         </p>
       </div>
 
