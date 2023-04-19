@@ -65,6 +65,7 @@
 
   @media (max-width: 576px) {
     .today-status-card {
+      max-width: 100% !important;
       padding-right: 0 !important;
       padding-left: 0 !important;
     }
