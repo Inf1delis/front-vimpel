@@ -64,42 +64,42 @@ export const betonTable = {
     {
       name: 'М50',
       classification: 'В3,5',
-      prices: ['3 650', '3 750', '3 850'],
+      prices: ['3 650', '3 850'],
     },
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['4 000', '4 100', '4 150'],
+      prices: ['4 000', '4 200'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['4 200', '4 300', '4 350'],
+      prices: ['4 200', '4 400'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['4 600', '4 700', '4 650'],
+      prices: ['4 600', '4 800'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['4 800', '4 900', '3 000'],
+      prices: ['4 800', '5 000'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['5 100', '5 200', '3 250'],
+      prices: ['5 100', '5 300'],
     },
     {
       name: 'М350',
       classification: 'В25',
-      prices: ['5 600', '5 700', '3 540'],
+      prices: ['5 600', '5 800'],
     },
     {
       name: 'М400',
       classification: 'В30',
-      prices: ['6 000', '6 100', '3 750'],
+      prices: ['6 000', '6 200'],
     }
   ]
 }
@@ -112,32 +112,32 @@ export const peskoTable = {
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['4 400', '4 500', '2 790'],
+      prices: ['4 600', '4 800'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['4 700', '4 800', '2 990'],
+      prices: ['4 900', '5 100'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['5 000', '5 100'],
+      prices: ['5 200', '5 400'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['5 400', '5 500'],
+      prices: ['5 500', '5 700'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['5 700', '5 800'],
+      prices: ['5 700', '5 900'],
     },
     {
       name: 'М350',
       classification: 'В30',
-      prices: ['6 000', '6 100'],
+      prices: ['6 200', '6 400'],
     }
   ]
 }
