@@ -59,7 +59,7 @@ export const borderShortList = betonShortList
 
 export const betonTable = {
   tableTitle: 'Товарный бетон',
-  columns: ['П3', 'П4'],
+  columns: ['П2', 'П3'],
   rows: [
     {
       name: 'М50',
