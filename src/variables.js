@@ -107,7 +107,7 @@ export const betonTable = {
 
 export const peskoTable = {
   tableTitle: 'Пескобетон на отсеве',
-  columns: ['П3', 'П4'],
+  columns: ['П2', 'П3'],
   rows: [
     {
       name: 'М100',
