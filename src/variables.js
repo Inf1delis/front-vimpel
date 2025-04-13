@@ -59,7 +59,7 @@ export const borderShortList = betonShortList
 
 export const betonTable = {
   tableTitle: 'Товарный бетон',
-  columns: ['П2', 'П3'],
+  columns: ['П2/П3', 'П4'],
   rows: [
     {
       name: 'М50',
@@ -69,37 +69,37 @@ export const betonTable = {
     {
       name: 'М100',
       classification: 'В7,5',
-      prices: ['4 800', '5 100'],
+      prices: ['5 100', '5 400'],
     },
     {
       name: 'М150',
       classification: 'В12,5',
-      prices: ['5 100', '5 400'],
+      prices: ['5 400', '5 700'],
     },
     {
       name: 'М200',
       classification: 'В15',
-      prices: ['5 400', '5 700'],
+      prices: ['5 800', '6 100'],
     },
     {
       name: 'М250',
       classification: 'В20',
-      prices: ['5 800', '6 100'],
+      prices: ['6 200', '6 500'],
     },
     {
       name: 'М300',
       classification: 'В22,5',
-      prices: ['6 100', '6 400'],
+      prices: ['6 600', '6 900'],
     },
     {
       name: 'М350',
       classification: 'В25',
-      prices: ['6 500', '6 800'],
+      prices: ['7 100', '7 400'],
     },
     {
       name: 'М400',
       classification: 'В30',
-      prices: ['7 200', '7 500'],
+      prices: ['7 800', '8 100'],
     }
   ]
 }
@@ -107,7 +107,7 @@ export const betonTable = {
 
 export const peskoTable = {
   tableTitle: 'Пескобетон на отсеве',
-  columns: ['П2', 'П3'],
+  columns: ['П2/П3', 'П4'],
   rows: [
     {
       name: 'М100',
