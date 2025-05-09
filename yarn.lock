@@ -4252,9 +4252,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 git-tags-remote@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/git-tags-remote/-/git-tags-remote-1.0.3.tgz#c61bd76095e5db64aac555d2064c95efd8065a80"
-  integrity sha512-DkkwQGbm1kbxNyG7n/La+Qp6So5AzligjbpT0p7YsDzGQJT/nTOOztsW0Sdih4D6y7s91MPjYXdDOthSqdxRMg==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/git-tags-remote/-/git-tags-remote-1.0.4.tgz#3c9a6e981dd2dc59e351ae65840856ed961be0bb"
+  integrity sha512-naV0k9AA1JvyxmIvb/a3PDKWeaObYoS/8En8YR8zwca7K5EJJq7507UK6zan1YthBsOHZqW49kcEvWG0JcZBWQ==
   dependencies:
     semver "^7.3.2"
 
